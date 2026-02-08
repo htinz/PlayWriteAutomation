@@ -25,7 +25,49 @@ Key design patterns and principles implemented:
 - **Test Data Management:** Externalized test data enables parameterized and data-driven testing.
 - **API & UI Layer Separation:** Distinct structure for frontend and backend validation ensures better organization and scalability.
 - **Parallel Execution:** Tests are optimized for faster feedback through concurrent execution.
-- **Reporting Integration:** Generates detailed HTML reports for test results and debugging.
+- **Reporting Integration:** Generates detailed HTML reports for test results and debugging. 
+
+## Installation
+Follow the steps below to set up the test automation framework locally.
+
+### Prerequisites
+Ensure the following tools are installed:
+- Node.js (v18 or higher)
+- npm (comes with Node.js)
+- Git
+Verify installations:
+node -v  
+npm -v  
+git --version  
+
+### Setup Steps
+1. Clone the repository
+git clone https://github.com/htinz/PlaywrightAutomation_01.git
+
+2. Navigate into the project folder
+cd PlaywrightAutomation_01
+
+3. Install dependencies
+npm install
+
+4. Install Playwright browsers
+npx playwright install
+
+## How to Run Tests
+Run all tests:
+npm test
+
+Run UI tests only:
+npm run test:ui
+
+Run API tests only:
+npm run test:api
+
+Run tests in headed mode:
+npm run test:headed
+
+View HTML report:
+npm run test:report
 
 ## Test Coverage
 - UI tests (login, forms, dropdowns, Radio buttons,...)
@@ -33,8 +75,5 @@ Key design patterns and principles implemented:
 - Error scenarios
 - Reports
 
-## How to Run
-1. git clone
-2. npm install
-3. npm test
+
 
