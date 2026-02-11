@@ -20,13 +20,8 @@
     "test:headed": "npx playwright test --headed",
     "test:report": "npx playwright show-report"
   },
-  "_deprecatedScripts": {
-    "regression": "npx playwright test",
-    "webTests": "npx playwright test --grep @Web",
-    "APITests": "npx playwright test --grep @API",
-    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=chrome"
-  },
   "dependencies": {
+    "@cucumber/cucumber": "^12.6.0",
     "archiver": "^5.3.2",
     "archiver-utils": "^2.1.0",
     "async": "^3.2.6",
@@ -87,7 +82,6 @@
     "once": "^1.4.0",
     "pako": "^1.0.11",
     "path-is-absolute": "^1.0.1",
-    "playwright": "^1.57.0",
     "playwright-core": "^1.57.0",
     "process-nextick-args": "^2.0.1",
     "readable-stream": "^3.6.2",
@@ -109,7 +103,7 @@
     "zip-stream": "^4.1.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
+    "@playwright/test": "^1.58.2",
     "@types/node": "^25.0.3",
     "allure-playwright": "^3.4.5",
     "typescript": "^5.9.3"
