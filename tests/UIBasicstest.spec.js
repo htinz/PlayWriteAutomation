@@ -12,7 +12,7 @@ test("Browser Context Playwright test", async ({ browser }) => {
   await page.locator("[type='text']").fill("learning");
   await signIn.click();
   console.log(await page.locator("[style*='block']").textContent());
-  await expect(page.locator("[style*='block']")).toContainText("Empty");
+  await expect(page.locator("[style*='block']")).toContainText("Incorrect");
   await userName.fill("");
   await userName.fill("rahulshettyacademy");
   await signIn.click();
